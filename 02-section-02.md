@@ -1,6 +1,6 @@
 # Kubernetes Basics training 101
 
-Deployment and Service basics. Delpoy pod and access to your pod via Service.
+### Deployment and Service basics. Delpoy pod and access to your pod via Service.
 ---  
 
 ## 13: Deploy sample service into your namespaces.
@@ -159,7 +159,7 @@ kubectl delete -f ./02_service-nodeport-nginx.yaml
 </br>
 
 ---
-### Congrats! Mission complete.
+#### Congrats! Mission complete.
 
 You learned the a part of basics of Deployment and Service.
 
