@@ -67,11 +67,74 @@ reload webapp-color app web page on your browser.
 </br>
 </br>
 
+
+
 ## 28: Check the deployment and identify the version of the application again
 ```shell
 kubectl describe deployment webapp-color
 ```
 
 ###### Quiz.1: Quiz.1: What information do you see?
-###### Quiz.1: What is the app version?
+###### Quiz.2: What is the app version?
+</br>
+</br>
+
+
+## 29: Check rollout history of deployment
+```shell
+kubectl rollout history deployment webapp-color
+```
+###### Quiz.1: What information do you see?
+###### Quiz.2: How many versions do you see?
+###### Quiz.3: What is displayed in “CHANGE CUASE”?
+###### Quiz.4: What is this "CHANGE CASE" information displayed from?
+</br>
+</br>
+
+
+
+### 30: Check rollout history detail of deployment
+```shell
+kubectl rollout history deployment webapp-color --revision=1
+```
+after that
+```shell
+kubectl rollout history deployment webapp-color --revision=2
+```
+###### Quiz.1: What information do you see?
+###### Quiz.2: What is displayed on the annotation?
+###### Quiz.3: (Step29 Quiz again) What is this "CHANGE CASE" information displayed from?  
+</br>
+</br>
+
+
+
+### 31: Roll-back webapp-color
+```shell
+kubectl rollout undo deployment webapp-color
+```
+> or you can also roll back by specifying a version.
+```shell
+kubectl rollout undo deployment webapp-color --to-revision=1
+```
+###### Quiz.1: Did the command succeed?
+###### Quiz.2: What is the app version? (use command kubectl describe deployment webapp-color)
+</br>
+</br>
+
+
+
+### 32: Check webapp-color app version on web page
+```shell
+Access your Web-browser with master or worker nodes [IPAddress] + [NodePort]
+reload webapp-color app web page on your browser.
+```
+> ( eg. `10.149.30.109:32114` ,This is sample URL. )
+###### Quiz.1: Does the webapp-color page been displayed successfully?
+###### Quiz.2: Is there a change in the webapp-color page?
+</br>
+</br>
+
+
+
 
