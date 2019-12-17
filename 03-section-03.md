@@ -1,6 +1,6 @@
 # Kubernetes Basics training 101
 
-### kubectl basics about Kubernetes scall feature and Rolling Update and Rollback.
+### kubectl basics about Kubernetes scale feature and Rolling Update and Rollback.
 ---  
 
 ## 23: Create a deployment and a service
