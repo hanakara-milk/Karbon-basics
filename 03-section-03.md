@@ -93,7 +93,7 @@ kubectl rollout history deployment webapp-color
 
 
 
-### 30: Check rollout history detail of deployment
+## 30: Check rollout history detail of deployment
 ```shell
 kubectl rollout history deployment webapp-color --revision=1
 ```
@@ -109,7 +109,7 @@ kubectl rollout history deployment webapp-color --revision=2
 
 
 
-### 31: Roll-back webapp-color
+## 31: Roll-back webapp-color
 ```shell
 kubectl rollout undo deployment webapp-color
 ```
@@ -124,7 +124,7 @@ kubectl rollout undo deployment webapp-color --to-revision=1
 
 
 
-### 32: Check webapp-color app version on web page
+## 32: Check webapp-color app version on web page
 ```shell
 Access your Web-browser with master or worker nodes [IPAddress] + [NodePort]
 reload webapp-color app web page on your browser.
@@ -166,7 +166,7 @@ spec:
 
 
 
-### 33: Delete your Pod, deployment, replicaset and Service
+## 33: Delete your Pod, deployment, replicaset and Service
 ```shell
 kubectl delete -f 05_verup-color-app.yaml
 ```
