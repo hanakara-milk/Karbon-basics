@@ -133,8 +133,58 @@ reload webapp-color app web page on your browser.
 ###### Quiz.1: Does the webapp-color page been displayed successfully?
 ###### Quiz.2: Is there a change in the webapp-color page?
 </br>
+
+> If you want to reduce the downtime as much as possible by rolling update, consider the following points.
+
+Set "maxSurge: 1" in strategy and "maxUnavailable: 0"
+```yaml
+spec:
+  replicas: 8
+  selector:
+    matchLabels:
+      run: webapp-color
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+```
+</br>
+Set "path: / actuator / health" and "port: 8080" with "httpGet:" in readinessProbe.
+
+```yaml
+spec:
+  containers:
+  - image: kodekloud/webapp-color:v2
+    name: webapp-color
+    readinessProbe:
+      httpGet:
+        port: 80
+        path: /
+```
+</br>
 </br>
 
 
+
+### 33: Delete your Pod, deployment, replicaset and Service
+```shell
+kubectl delete -f 05_verup-color-app.yaml
+```
+###### Quiz.1: Did the command succeed?
+</br>
+</br>
+
+
+
+---
+#### Congrats! Mission complete.
+
+You learned the a part of basics of Deployment and Service.
+
+You have successfully rolling update and rollback your application.
+
+----> Proceed to Section-4
+</br>
+</br>
 
 
