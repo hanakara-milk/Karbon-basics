@@ -138,6 +138,6 @@ You learned the basics of kubectl.
 
 You have successfully deployed your first pod.
 
-Proceed to Section-2 to learn the basics of Kubernetes.
+----> Proceed to Section-2
 </br>
 </br>
