@@ -31,9 +31,9 @@ kubectl describe service [YOUR_CREATED_SERVICE_NAME]
 Quiz.1: What information do you see?
 ```shell
 kubectl get nodes,svc -o wide
-
+```
 or
-
+```shell
 Node IP address information can also be confirmed from the Karbon UI.
  1． Access the Karbon UI.
  2． Select your cluster.
@@ -106,9 +106,9 @@ kubectl get pods
 ## 20: Scaling-in your sample app.
 ```shell
 kubectl scale deployment nginx --replicas=1
-
+```
 or
-
+```shell
 Modify "replicas: 4" to "replicas: 1" of 03_scaleup-nginx.yaml then apply it
 ```
 after that
