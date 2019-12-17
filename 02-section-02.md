@@ -149,9 +149,19 @@ kubectl get pods
 ###### Quiz.2: Is the pod displayed?
 ###### Quiz.3: What is different from Step19?
 
-After checking, execute the following command.
+After checking, 
+
+execute the following command.
 ```shell
 kubectl delete -f ./02_service-nodeport-nginx.yaml
 ```
+</br>
+</br>
+### Congrats! Mission complete.
+You learned the a part of basics of Deployment and Service.
+
+You have successfully deployed your first Service and access your Pod via Service.
+
+----> Proceed to Section-3
 </br>
 </br>
