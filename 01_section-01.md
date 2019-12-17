@@ -1,6 +1,6 @@
 # Kubernetes Basics training 001
 
-kubectl basics and create first pod into your Kubernetes cluster.
+### kubectl basics and create first pod into your Kubernetes cluster.
 ---  
 ## 01: Confirm kubectl version
 ```kubernetes-kubectl
@@ -133,7 +133,7 @@ kubectl describe pod [YOUR_POD_NAME]
 </br>
 
 ---
-### Congrats! Mission complete.
+#### Congrats! Mission complete.
 You learned the basics of kubectl.
 
 You have successfully deployed your first pod.
