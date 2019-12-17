@@ -26,4 +26,4 @@ cd Karbon-basics
 
 Have a fun with Kubernetes!
 
---> Proceed to 00_command.md
+--> Proceed to 01_section-01.md
