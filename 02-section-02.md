@@ -158,6 +158,7 @@ kubectl delete -f ./02_service-nodeport-nginx.yaml
 </br>
 </br>
 
+---
 ### Congrats! Mission complete.
 
 You learned the a part of basics of Deployment and Service.
