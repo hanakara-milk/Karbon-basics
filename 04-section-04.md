@@ -37,7 +37,7 @@ kubectl apply -f 07_deployment-color-app-latest.yaml
 
 
 
-## 35: Check the deployment, rs, pods and services, pick up the name of the pod (like webapp-color-ABCDEFG)
+## 37: Check the deployment, rs, pods and services, pick up the name of the pod (like webapp-color-ABCDEFG)
 ```shell
 kubectl get all
 ```
@@ -47,18 +47,19 @@ kubectl get all
 
 
 
-## 36: Check the environent variables from the Pod
+## 38: Check the environent variables from the Pod
 ```shell
 kubectl exec -it [YOUR_POD_NAME] -- env
 ```
 ###### Quiz.1: Have you log into your container successfully?
-###### Quiz.2: What color will be your webpage?
+###### Quiz.2: Did you find the value set in ConfigMap in the container?
+###### Quiz.3: What color will be your webpage?
 </br>
 </br>
 
 
 
-## 37: Access your webapp-color application via NodePort
+## 39: Access your webapp-color application via NodePort
 ```
 Access your Web-browser with master or worker nodes [IPAddress] + [NodePort]
 ```
@@ -69,7 +70,7 @@ Access your Web-browser with master or worker nodes [IPAddress] + [NodePort]
 
 
 
-## 38: Delete and recreate the configmap
+## 40: Delete and recreate the configmap
 ```shell
 kubectl delete -f 06_configmap-color-app-pink.yaml
 kubectl apply -f 08_configmap-color-app-blue.yaml
@@ -80,7 +81,7 @@ kubectl apply -f 08_configmap-color-app-blue.yaml
 
 
 
-## 39: Check the configmap
+## 41: Check the configmap
 ```shell
 kubectl get cm appcolor
 
@@ -92,7 +93,7 @@ kubectl describe cm appcolor
 
 
 
-## 40: Delete and recreate the deployment
+## 42: Delete and recreate the deployment
 ```shell
 kubectl delete -f 07_deployment-color-app-latest.yaml
 kubectl apply -f 07_deployment-color-app-latest.yaml
@@ -103,7 +104,7 @@ kubectl apply -f 07_deployment-color-app-latest.yaml
 
 
 
-## 41: Check the deployment, rs, pods and services, pick up the name of the pod (like webapp-color-ABCDEFG)
+## 43: Check the deployment, rs, pods and services, pick up the name of the pod (like webapp-color-ABCDEFG)
 ```shell
 kubectl get all
 ```
@@ -113,7 +114,7 @@ kubectl get all
 
 
 
-## 42: Check the environent variables from the Pod
+## 44: Check the environent variables from the Pod
 ```shell
 kubectl exec -it [YOUR_POD_NAME] -- env
 ```
@@ -123,7 +124,7 @@ kubectl exec -it [YOUR_POD_NAME] -- env
 
 
 
-## 43: Access your webapp-color application via NodePort
+## 45: Access your webapp-color application via NodePort
 ```
 Access your Web-browser with master or worker nodes [IPAddress] + [NodePort]
 ```
@@ -135,7 +136,7 @@ Access your Web-browser with master or worker nodes [IPAddress] + [NodePort]
 
 
 
-## 44: Delete the configmap and deployment 
+## 46: Delete the configmap and deployment 
 ```shell
 kubectl delete -f 07_deployment-color-app-latest.yaml
 kubectl delete -f 08_configmap-color-app-blue.yaml
