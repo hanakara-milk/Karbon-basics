@@ -112,7 +112,6 @@ kubectl apply -f ./10_wordpress-deployment.yaml; watch -n 1 kubectl get po,pv,pv
 ## 53: Access your WordPress apps page via NodePort
 ```shell
 Access your Web-browser with master or worker nodes [IPAddress] + [NodePort]
-reload webapp-color app web page on your browser.
 ```
 > ( eg. `10.149.30.109:32114` ,This is sample URL. )
 ###### Quiz.1: Does the WordPress page been displayed successfully?
