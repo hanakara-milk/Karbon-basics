@@ -1,6 +1,6 @@
 # Kubernetes Basics training 101
 
-### Kubernetes basics about StatefulSet with persistent volume and DaemonSet.
+### Kubernetes StatefulSet with persistent volume and DaemonSet feature basics.
 ---  
 
 
