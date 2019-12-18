@@ -1,6 +1,6 @@
 # Kubernetes Basics training 101
 
-### kubectl basics about Kubernetes volume and Karbon CSI Volume Plugin.
+### Kubernetes volume and Karbon CSI Volume Plugin feature basics.
 
 ---
 ## 45: Pre-Check storage resources on Karbon.
