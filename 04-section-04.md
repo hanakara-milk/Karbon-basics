@@ -98,7 +98,8 @@ kubectl describe cm appcolor
 kubectl delete -f 07_deployment-color-app-latest.yaml
 kubectl apply -f 07_deployment-color-app-latest.yaml
 ```
-> You can reload Pod by modify Deployment (ex. adding annotation).
+> You can also reload Pod by modify Deployment (ex. adding annotations).
+> But this method is bad know-how, be careful about how to use.
 </br>
 </br>
 
