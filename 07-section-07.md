@@ -99,6 +99,10 @@ kubectl get service -n ntnx-system
  7. Click "Import" button
 ```
 > Also you can adding other dashboard ( eg. 6781 / Pod dashboard )
+</br>
+</br>
+
+
 
 
 ---
