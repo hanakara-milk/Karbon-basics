@@ -21,7 +21,7 @@ git clone https://github.com/hanakara-milk/Karbon-basics
 
 ### Move to training materials directory
 ```
-cd Karbon-basics
+cd Karbon-basics/yaml
 ```
 
 Have a fun with Kubernetes!
