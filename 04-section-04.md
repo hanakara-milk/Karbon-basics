@@ -1,6 +1,6 @@
 # Kubernetes Basics training 101
 
-### kubectl basics about Kubernetes config map feature.
+### Kubernetes config map feature basics.
 
 ---
 ## 34: Create a configmap
