@@ -183,7 +183,7 @@ You learned the a part of basics of Deployment and Service.
 
 You have successfully rolling update and rollback your application.
 
-----> Proceed to Section-4
+----> Proceed to [Section-4](https://github.com/hanakara-milk/Karbon-basics/blob/master/04-section-04.md)
 </br>
 </br>
 
