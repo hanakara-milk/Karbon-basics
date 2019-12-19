@@ -123,7 +123,7 @@ kubectl exec -it sample-statefuleset-0 -- ls /var/data
 
 ## 64: Delete StatefulSet
 ```shell
-kubectl apply -f ./11_statefulset.yaml; watch -n 1 kubectl get po,pv,pvc
+kubectl delete -f ./11_statefulset.yaml; watch -n 1 kubectl get po,pv,pvc
 ```
 ###### Quiz.1: How was the pod delete sequence?
 ###### Quiz.2: How was the volume behavior?
