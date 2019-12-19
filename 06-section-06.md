@@ -217,7 +217,7 @@ kubectl delete -f ./daemonset.yaml
 You learned the a part of basics that one of Kubernetes Work-load resoures (StatefulSet and DaemonSet).
 You have been successful deploy StatufulSet with persistent volume and DeamonSet apps.
 
-----> Proceed to Section-7 (Addtional)
+----> Proceed to [Section-7 (Addtional)](https://github.com/hanakara-milk/Karbon-basics/blob/master/07-section-07.md)
 </br>
 </br>
 
