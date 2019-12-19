@@ -203,7 +203,7 @@ kubectl delete pod sample-ds-[CHAR_1]; kubectl delete pod sample-ds-[CHAR_2]; wa
 
 ## 70: Delete deamonset Pod
 ```shell
-kubectl delete -f ./daemonset.yaml
+kubectl delete -f ./12_daemonset.yaml
 ```
 </br>
 </br>
