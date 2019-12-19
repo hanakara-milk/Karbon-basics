@@ -154,6 +154,6 @@ You learned the a part of basics that one of Kubernetes storage resoures (Config
 
 You have been successful in changing the application settings using ConfigMap.
 
-----> Proceed to Section-5
+----> Proceed to [Section-5](https://github.com/hanakara-milk/Karbon-basics/blob/master/05-section-05.md)
 </br>
 </br>
