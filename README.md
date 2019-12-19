@@ -8,6 +8,7 @@ The instructor will provide you with the Prism and Karbon UI addresses and crede
 ```
 </br>
 </br>
+
 ## How to use
 ### Logon your kubectl client VM 
 ```
@@ -18,12 +19,14 @@ The instructor will provide you with the kubectl client VM addresses and credent
 > TeraTerm or Putty should be installed on the training PC.
 </br>
 </br>
+
 ### Clone training materials from github
 ```
 git clone https://github.com/hanakara-milk/Karbon-basics
 ```
 </br>
 </br>
+
 ### Move to training materials directory
 ```
 cd Karbon-basics/yaml
