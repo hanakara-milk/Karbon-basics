@@ -68,7 +68,6 @@ kubectl delete pod sample-statefuleset-0; watch -n 1 kubectl get po,pv,pvc
 
 ## 60: Log in to the container and check the "mountPath" again.
 ```shell
-kubectl exec -it sample-statefuleset-0 -- touch /var/data/stateful-01.txt
 kubectl exec -it sample-statefuleset-0 -- ls /var/data
 ```
 ###### Quiz.1: Was the statefulset manifest path mounted?
@@ -113,7 +112,6 @@ watch kubectl get pod -o wide
 
 ## 63: Log in to the container and check the "mountPath" again.
 ```shell
-kubectl exec -it sample-statefuleset-0 -- touch /var/data/stateful-01.txt
 kubectl exec -it sample-statefuleset-0 -- ls /var/data
 ```
 ###### Quiz.1: Was the statefulset manifest path mounted?
