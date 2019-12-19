@@ -140,7 +140,7 @@ kubectl delete -f ./10_wordpress-deployment.yaml; kubectl delete -f ./09_mysql-d
 You learned the a part of basics that one of Kubernetes storage resoures (PV/PVC).
 You have been successful deploy apps with persistent volume.
 
-----> Proceed to Section-6
+----> Proceed to [Section-6](https://github.com/hanakara-milk/Karbon-basics/blob/master/06-section-06.md)
 </br>
 </br>
 
