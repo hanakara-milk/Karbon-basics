@@ -165,6 +165,6 @@ You learned the a part of basics of Deployment and Service.
 
 You have successfully deployed your first Service and access your Pod via Service.
 
-----> Proceed to Section-3
+----> Proceed to [Section-3](https://github.com/hanakara-milk/Karbon-basics/blob/master/03-section-03.md)
 </br>
 </br>
