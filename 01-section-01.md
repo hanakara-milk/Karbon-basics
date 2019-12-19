@@ -138,6 +138,6 @@ You learned the basics of kubectl.
 
 You have successfully deployed your first pod.
 
-----> Proceed to Section-2
+----> Proceed to [Section-2](https://github.com/hanakara-milk/Karbon-basics/blob/master/02-section-02.md)
 </br>
 </br>
