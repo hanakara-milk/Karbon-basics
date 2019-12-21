@@ -13,7 +13,7 @@ kubectl get po -A | grep -e prom -e export
 
 
 
-## 72: Check Nutanix Karbon minitoring component detail
+## 72: Check built-in Prometheus service detail
 ```shell
 kubectl describe -n ntnx-system services prometheus-k8s
 ```
