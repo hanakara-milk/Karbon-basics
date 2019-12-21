@@ -55,7 +55,7 @@ Login to Grafana (Grafana login credential will be provide by trainer)
  3. Select Prometheus panel icon.
  4. Click "Save and Test"
 ```
-###### Quiz.1: What was the result of clicking?
+###### Quiz.1: What was the result of clicking "Save and Test"?
 ###### Quiz.2: What do you think is the cause of the error?
 ###### Quiz.3: Where should we fix it?
 </br>
@@ -68,7 +68,7 @@ Login to Grafana (Grafana login credential will be provide by trainer)
  1. Click gear icon on left side vane menu.
  2. Configuration > Data Sources.
  3. Select Prometheus panel icon.
- 4. Replace URL (http://prometheus:9090) to http://prometheus-k8s.ntnx-system.svc.cluster.local:9090
+ 4. Replace URL (http://prometheus:9090) to proper address
  5. Click "Save and Test"
 ```
 ###### Quiz.1: What was the result of clicking?
@@ -83,6 +83,13 @@ Again, check name of service of built-in Prometheus on Karbon.
 ```shell
 kubectl get service -n ntnx-system
 ```
+> You should set the following address.
+
+`http://[YOUR_SERVICE_NAME].[YOUR_SERVICE_NAME_SPACE].svc.cluster.local:[PORT_NUMBER]`
+
+> Prometheus service type:ClusterIP is
+
+`http://prometheus-k8s.ntnx-system.svc.cluster.local:9090`
 </br>
 </br>
 
