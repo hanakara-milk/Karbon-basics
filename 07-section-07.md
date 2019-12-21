@@ -41,7 +41,7 @@ Access your Web-browser with master or worker nodes [IPAddress] + [NodePort]
 ###### Quiz.1: Does the Grafana page been displayed successfully?
 After that
 ```shell
-Login to Grafana (Grafana login credential provide by trainer)
+Login to Grafana (Grafana login credential will be provide by trainer)
 ```
 </br>
 </br>
