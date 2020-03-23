@@ -44,8 +44,9 @@ reload webapp-color app web page on your browser.
 ```shell
 kubectl describe deployment webapp-color
 ```
-###### Quiz.1: Quiz.1: What information do you see?
-###### Quiz.1: What is the app version?
+###### Quiz.1: What information do you see?
+###### Quiz.2: What is the app version?
+###### Quiz.3: Check the "NewReplicaSet:" and do you recognize random strings?
 </br>
 </br>
 
