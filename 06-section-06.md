@@ -5,6 +5,16 @@
 
 
 ## 55: Deploy statefulset Pod
+
+#### Note if you are running a single worker, add extra worker node
+```
+ 1. Access Karbon UI.
+ 2. Select your kubernetes cluster
+ 3. Select Nodes
+ 4. + Add Worker
+```
+</br>
+
 ```shell
 kubectl apply -f ./11_statefulset.yaml; watch -n 1 kubectl get po,pv,pvc
 ```
