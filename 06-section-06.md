@@ -173,6 +173,8 @@ kubectl delete -f ./11_statefulset.yaml; watch -n 1 kubectl get po,pv,pvc
 > If it is difficult to find, use the search window to filter the Volume list.
 </br>
 </br>
+
+
 #### THERE IS A EXTRA MISSIONS! - Please try re-create stateful-set again!
 ```shell
 kubectl apply -f ./11_statefulset.yaml; watch -n 1 kubectl get po,pv,pvc
@@ -181,6 +183,7 @@ then
 ```shell
 kubectl exec -it sample-statefuleset-0 -- ls /var/data
 ```
+
 ###### Quiz.1: How long does it take for the StatefulSet Pod running?
 ###### Quiz.2: Is there a file that your created in the mounted path?
 
