@@ -83,6 +83,15 @@ kubectl get pod -o wide
 ```
 ###### Quiz.1: Which pod is on which node?
 
+#### Note if you are running a single worker, add extra worker node before delete woker node-0
+```
+ 1. Access Karbon UI.
+ 2. Select your kubernetes cluster
+ 3. Select Nodes
+ 4. + Add Worker
+```
+</br>
+
 #### Note which node the pod of sample-statefuleset-0 is running on.
 
 after that
