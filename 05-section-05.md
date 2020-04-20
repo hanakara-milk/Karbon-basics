@@ -9,7 +9,11 @@
  2. Select your kubernetes cluster
  3. Select volume
 ```
+```shell
+kubectl get pv
+```
 ###### Quiz.1: What information do you see?
+###### Quiz.2: Can you identify the persistent volume names like pvc-XXXXXXXXXX from the output of `kubectl get pv` command?
 </br>
 </br>
 
@@ -23,6 +27,7 @@
  4. Select Volume Group
 ```
 ###### Quiz.1: What information do you see?
+###### Quiz.2: Can you find the persistent volumes created in your kubernetes cluster?
 </br>
 </br>
 
@@ -46,9 +51,13 @@ kubectl describe secrets mysql-pass
 ```
 ###### Quiz.1: What information do you see?
 ###### Quiz.2: Was the password displayed?
+```shell
+
+```
+
 after that, Try to Describe another secret that you found by `kubectl get secret`.
 ```shell
-kubectl describe secrets defult-token-[CHAR]
+kubectl describe secrets default-token-[CHAR]
 ```
 > Replace [CHAR] with the output result of your environment.
 ###### Quiz.3: What information do you see?
@@ -63,6 +72,7 @@ kubectl apply -f ./09_mysql-deployment.yaml; watch -n 1 kubectl get po,pv,pvc
 ```
 ###### Quiz.1: What information do you see?
 ###### Quiz.2: What resources have been created?
+###### Quiz.3: Can you identify the newly created persistent volume name like pvc-XXXXXXXXXX from the output of `kubectl get pv` command?
 </br>
 </br>
 
@@ -88,6 +98,7 @@ kubectl apply -f ./09_mysql-deployment.yaml; watch -n 1 kubectl get po,pv,pvc
  4. Select Volume Group
 ```
 ###### Quiz.1: Have you found the Volume of Nutanix Volumes created by step 49?
+###### Quiz.2: Can you find the newly created persistent volume in your kubernetes cluster?
 > If it is difficult to find, use the search window to filter the Volume list.
 </br>
 </br>

@@ -50,7 +50,7 @@ Login to Grafana (Grafana login credential will be provide by trainer)
 
 ## 75: Confirm Data Source
 ```shell
- 1. Click gear icon on left side vane menu.
+ 1. Click gear icon on left side pane menu.
  2. Configuration > Data Sources.
  3. Select Prometheus panel icon.
  4. Click "Save and Test"
@@ -65,7 +65,7 @@ Login to Grafana (Grafana login credential will be provide by trainer)
 
 ## 76: Fix Grafana Data Sources connection error
 ```shell
- 1. Click gear icon on left side vane menu.
+ 1. Click gear icon on left side pane menu.
  2. Configuration > Data Sources.
  3. Select Prometheus panel icon.
  4. Replace URL (http://prometheus:9090) to proper address
@@ -97,7 +97,7 @@ kubectl get service -n ntnx-system
 
 ## 77: Adding Grafana dashboard for monitoring Kubernetes
 ```shell
- 1. Click plus icon on left side vane menu.
+ 1. Click plus icon on left side pane menu.
  2. Create  > Import.
  3. Input 10000 at "Grafana.com Dashboard"
  4. Click "Load" button
