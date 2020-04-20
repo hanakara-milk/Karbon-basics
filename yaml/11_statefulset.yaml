@@ -5,18 +5,14 @@ metadata:
 spec:
   serviceName: statefuleset-service
   replicas: 3
-  # これを定義することでRollingUpdateされる
   updateStrategy:
     # RollingUpdate or OnDelete。Default: RollingUpdate
-    # OnDeleteだとPodは自動的に更新されず、手動でPodを削除すると、自動的に新しいPodが起動される。
+    # OnDelete make update by deleting exising Pod
     type: RollingUpdate
-    ##############################################################
-    # partitionを設定すると、指定した番号以上のPodのみが更新される。
-    # 以下の例だと、{Pod名}-1以上のPodが更新され、{Pod名}-0は更新されない。
-    ##############################################################
+    # partition make Update pods with specified numbers or higher
+    # Set 2 to update Pod-2 or later
     #rollingUpdate:
     #  partition: 1
-  # Podの定義
   template:
     metadata:
       labels:
@@ -28,7 +24,6 @@ spec:
         volumeMounts:
         - name: sample-pvc
           mountPath: /var/data
-  # 以下のTemplateでPersistentVolumeClaimを作成する
   volumeClaimTemplates:
   - metadata:
       name: sample-pvc
@@ -38,5 +33,4 @@ spec:
           storage: 1Gi
       accessModes:
       - ReadWriteOnce
-      # storageClassNameを省略するとHostPathでホストOS上にmountされる
       storageClassName: default-storageclass
