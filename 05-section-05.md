@@ -74,7 +74,8 @@ after that, Try to analyze password.
 echo -n [ENCODED-CHAR] | base64 --decode
 ```
 
-> ( Replace [ENCODED-CHAR] with the output result of `kubectl get secrets mysql-pass -o yaml` eg. echo -n bnV0YW5peA== | base64 --decode , This is sample command. )
+> ( Replace [ENCODED-CHAR] with the output result of `kubectl get secrets mysql-pass -o yaml`
+> eg. `echo -n bnV0YW5peA== | base64 --decode` , This is sample command. )
 
 ###### Quiz.5: Did you read the password?
 </br>
