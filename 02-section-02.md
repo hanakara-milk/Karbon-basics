@@ -13,9 +13,10 @@ kubectl apply -f ./02_service-nodeport-nginx.yaml
 
 
 
-## 14: Getting your service detail information.
+## 14: List and get your service information.
 
 ```shell
+kubectl get services
 kubectl describe service [YOUR_CREATED_SERVICE_NAME]
 ```
 ###### Quiz.1: What information do you see?

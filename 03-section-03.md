@@ -59,12 +59,12 @@ kubectl apply -f 05_verup-color-app.yaml ; watch kubectl get pod
 ###### Quiz.1: How are the application pods updated?
 also
 ```shell
-reload webapp-color app web page on your browser.
+reload webapp-color app web page on your browser multiple times.
 ```
 ###### Quiz.2: What does the webapp-color app web page look like?
 ###### Quiz.3: What is the display ratio of Version1 and Version2 pages?
 ###### Quiz.4: Why did this display behavior occur?
-#### If you want to see the behavior of step 26 again, execute the `kubectl delete deyloyment [YOUR_WEB_COLOR_DEPLOYMENT]` command, then repeat step 27.
+#### If you want to see the behavior of step 27 again, execute the `kubectl rollout history deployment webapp-color` command, then repeat step 27.
 </br>
 </br>
 
@@ -75,7 +75,7 @@ reload webapp-color app web page on your browser.
 kubectl describe deployment webapp-color
 ```
 
-###### Quiz.1: Quiz.1: What information do you see?
+###### Quiz.1: What information do you see?
 ###### Quiz.2: What is the app version?
 </br>
 </br>
@@ -87,8 +87,8 @@ kubectl rollout history deployment webapp-color
 ```
 ###### Quiz.1: What information do you see?
 ###### Quiz.2: How many versions do you see?
-###### Quiz.3: What is displayed in “CHANGE CUASE”?
-###### Quiz.4: What is this "CHANGE CASE" information displayed from?
+###### Quiz.3: What is displayed in “CHANGE-CAUSE”?
+###### Quiz.4: What is this "CHANGE-CAUSE" information displayed from?
 </br>
 </br>
 
@@ -104,7 +104,7 @@ kubectl rollout history deployment webapp-color --revision=2
 ```
 ###### Quiz.1: What information do you see?
 ###### Quiz.2: What is displayed on the annotation?
-###### Quiz.3: (Step29 Quiz again) What is this "CHANGE CASE" information displayed from?  
+###### Quiz.3: (Step29 Quiz again) What is this "CHANGE-CAUSE" information displayed from?  
 </br>
 </br>
 

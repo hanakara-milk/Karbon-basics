@@ -31,7 +31,7 @@ kubectl apply -f ./11_statefulset.yaml; watch -n 1 kubectl get po,pv,pvc
 ```shell
 cat ./11_statefulset.yaml
 ```
-#### Quiz.1: Did you confirm the "mountPath" directory?
+##### Quiz.1: Did you confirm the "mountPath" directory?
 </br>
 </br>
 
@@ -184,6 +184,16 @@ then
 kubectl exec -it sample-statefuleset-0 -- ls /var/data
 ```
 
+#### Regardless of you did the EXTRA MISSIONS or not, delete pvc resources.
+```shell
+kubectl delete pvc sample-pvc-sample-statefuleset-0
+kubectl delete pvc sample-pvc-sample-statefuleset-1
+kubectl delete pvc sample-pvc-sample-statefuleset-2
+```
+###### Quiz.1: Check `kubectl get pv`, can you still see the persistent volumes mounted to the statefull sets?`
+
+
+
 ###### Quiz.1: How long does it take for the StatefulSet Pod running?
 ###### Quiz.2: Is there a file that your created in the mounted path?
 
@@ -197,7 +207,7 @@ kubectl delete -f ./11_statefulset.yaml; watch -n 1 kubectl get po,pv,pvc
 
 ## 67: Deploy deamonset app
 ```shell
-kubectl apply -f ./12_daemonset.yaml; watch -n 1 kubectl get po -o wide
+kubectl apply -f ./12_daemonset.yaml; watch -n 1 kubectl get ds,po -o wide
 ```
 ###### Quiz.1: What information do you see?
 ###### Quiz.2: How many pods have started up?
@@ -217,6 +227,7 @@ kubectl apply -f ./12_daemonset.yaml; watch -n 1 kubectl get po -o wide
  5. Click "+ Add Worker" button
 ```
 > After this Worker node adding, it takes up to 5 minutes for Pod to startup.
+Monitor `watch -n 1 kubectl get ds,po -o wide` command output throughout the adding process.
 ###### Quiz.1: What information do you see? (Watch console execute at Step 67)
 ###### Quiz.2: How many pods have started up?
 ###### Quiz.3: How was the pod startup sequence?
@@ -229,7 +240,7 @@ kubectl apply -f ./12_daemonset.yaml; watch -n 1 kubectl get po -o wide
 ## 69: Delete few deamonset Pod
 > Delete at least two arbitrarily selected pods from DeamonSet pods.
 ```shell
-kubectl delete pod sample-ds-[CHAR_1]; kubectl delete pod sample-ds-[CHAR_2]; watch -n 1 kubectl get po -o wide
+kubectl delete pod sample-ds-[CHAR_1]; kubectl delete pod sample-ds-[CHAR_2]; watch -n 1 kubectl get ds,po -o wide
 ```
 ###### Quiz.1: What information do you see?
 ###### Quiz.2: How many pods have re-started up?
