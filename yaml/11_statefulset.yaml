@@ -1,0 +1,36 @@
+kind: StatefulSet
+apiVersion: apps/v1beta1
+metadata:
+  name: sample-statefuleset
+spec:
+  serviceName: statefuleset-service
+  replicas: 3
+  updateStrategy:
+    ### RollingUpdate or OnDelete。Default: RollingUpdate
+    ### OnDelete make update by deleting exising Pod
+    type: RollingUpdate
+    ### partition make Update pods with specified numbers or higher
+    ### Set 2 to update Pod-2 or later
+    # rollingUpdate:
+    #   partition: 1
+  template:
+    metadata:
+      labels:
+        app: sample-statefuleset
+    spec:
+      containers:
+      - name: sample-container
+        image: detteiu/karbon-training03
+        volumeMounts:
+        - name: sample-sts-pvc
+          mountPath: /var/data
+  volumeClaimTemplates:
+  - metadata:
+      name: sample-sts-pvc
+    spec:
+      resources:
+        requests:
+          storage: 1Gi
+      accessModes:
+      - ReadWriteOnce
+      storageClassName: default-storageclass
