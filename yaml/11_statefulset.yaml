@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: sample-statefuleset
-        image: detteiu/karbon-training03
+        image: detteiu/karbon-training03:v1
         volumeMounts:
         - name: sample-sts-pvc
           mountPath: /var/data

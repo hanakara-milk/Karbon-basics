@@ -11,6 +11,8 @@ spec:
     metadata:
       labels:
         run: webapp-color
+        #annotations: 
+        #comment: reload
     spec:
       containers:
       - name: webapp-color

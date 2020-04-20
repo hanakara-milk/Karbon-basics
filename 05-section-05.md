@@ -61,6 +61,21 @@ kubectl describe secrets default-token-[CHAR]
 ```
 > Replace [CHAR] with the output result of your environment.
 ###### Quiz.3: What information do you see?
+
+```shell
+kubectl get secrets mysql-pass -o yaml
+```
+
+###### Quiz.4: Can you find out password and readable?
+
+after that, Try to analyze password.
+
+```shell
+echo -n [ENCODED-CHAR] | base64 --decode
+```
+
+> ( Replace [ENCODED-CHAR] with the output result of `kubectl get secrets mysql-pass -o yaml` eg. echo -n bnV0YW5peA== | base64 --decode , This is sample command. )
+
 </br>
 </br>
 

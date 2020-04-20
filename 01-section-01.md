@@ -65,7 +65,7 @@ kubectl create ns [YOUR_NAMESPACE_NAME]
 
 ## 07: Deploy sample pods into your namespaces.
 ```shell
-kubectl apply -f 01_deployment-nginx.yaml -n [YOUR_NAMESPACE_NAME]
+kubectl apply -f 01_deployment-sample-app.yaml -n [YOUR_NAMESPACE_NAME]
 ```
 ###### Quiz.1: Did the creation succeed?
 </br>

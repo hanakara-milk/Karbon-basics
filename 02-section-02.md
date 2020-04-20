@@ -5,7 +5,7 @@
 
 ## 13: Deploy sample service into your namespaces.
 ```shell
-kubectl apply -f ./02_service-nodeport-nginx.yaml
+kubectl apply -f 02_service-nodeport-sample-app.yaml
 ```
 ###### Quiz.1: Did the creation succeed?
 </br>
@@ -39,7 +39,7 @@ Node IP address information can also be confirmed from the Karbon UI.
  1． Access the Karbon UI.
  2． Select your cluster.
  3． Select Nodes on the left vane.
- 4. Select Master or Worker.
+ 4.  Select Master or Worker.
 ```
 ###### Quiz.1: What information do you see?
 </br>
@@ -92,7 +92,7 @@ Access your Web-browser or curl command with master or worker nodes [IPAddress] 
 
 ## 19: Scaling-out your sample app.
 ```shell
-kubectl apply -f ./03_scaleup-nginx.yaml
+kubectl apply -f 03_scaleup-sample-app.yaml
 ```
 after that
 ```shell
@@ -110,7 +110,7 @@ kubectl scale deployment nginx --replicas=1
 ```
 or
 ```shell
-Modify "replicas: 4" to "replicas: 1" of 03_scaleup-nginx.yaml then apply it
+Modify "replicas: 4" to "replicas: 1" of 03_scaleup-sample-app.yaml then apply it
 ```
 after that
 ```shell
@@ -140,7 +140,7 @@ kubectl get pods
 
 ## 22: Delete your Pod, deployment, replicaset and Service
 ```shell
-kubectl delete -f ./01_deployment-nginx.yaml
+kubectl delete -f 01_deployment-sample-app.yaml
 ```
 after that
 ```
@@ -154,7 +154,7 @@ After checking,
 
 execute the following command.
 ```shell
-kubectl delete -f ./02_service-nodeport-nginx.yaml
+kubectl delete -f 02_service-nodeport-sample-app.yaml
 ```
 </br>
 </br>

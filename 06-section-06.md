@@ -16,7 +16,7 @@
 </br>
 
 ```shell
-kubectl apply -f ./11_statefulset.yaml; watch -n 1 kubectl get po,pv,pvc
+kubectl apply -f 11_statefulset.yaml; watch -n 1 kubectl get po,pv,pvc
 ```
 ###### Quiz.1: What information do you see?
 ###### Quiz.2: How many pods have started up?
@@ -142,7 +142,7 @@ kubectl exec -it sample-statefuleset-0 -- ls /var/data
 
 ## 64: Delete StatefulSet
 ```shell
-kubectl delete -f ./11_statefulset.yaml; watch -n 1 kubectl get po,pv,pvc
+kubectl delete -f 11_statefulset.yaml; watch -n 1 kubectl get po,pv,pvc
 ```
 ###### Quiz.1: How was the pod delete sequence?
 ###### Quiz.2: How was the volume behavior?
@@ -177,7 +177,7 @@ kubectl delete -f ./11_statefulset.yaml; watch -n 1 kubectl get po,pv,pvc
 
 #### THERE IS A EXTRA MISSIONS! - Please try re-create stateful-set again!
 ```shell
-kubectl apply -f ./11_statefulset.yaml; watch -n 1 kubectl get po,pv,pvc
+kubectl apply -f 11_statefulset.yaml; watch -n 1 kubectl get po,pv,pvc
 ```
 then
 ```shell
@@ -199,7 +199,7 @@ kubectl delete pvc sample-pvc-sample-statefuleset-2
 
 #### If you complete EXTRA MISSIONS, Delete StatefulSet
 ```shell
-kubectl delete -f ./11_statefulset.yaml; watch -n 1 kubectl get po,pv,pvc
+kubectl delete -f 11_statefulset.yaml; watch -n 1 kubectl get po,pv,pvc
 ```
 </br>
 </br>
@@ -207,7 +207,7 @@ kubectl delete -f ./11_statefulset.yaml; watch -n 1 kubectl get po,pv,pvc
 
 ## 67: Deploy deamonset app
 ```shell
-kubectl apply -f ./12_daemonset.yaml; watch -n 1 kubectl get ds,po -o wide
+kubectl apply -f 12_daemonset.yaml; watch -n 1 kubectl get ds,po -o wide
 ```
 ###### Quiz.1: What information do you see?
 ###### Quiz.2: How many pods have started up?
@@ -252,7 +252,7 @@ kubectl delete pod sample-ds-[CHAR_1]; kubectl delete pod sample-ds-[CHAR_2]; wa
 
 ## 70: Delete deamonset Pod
 ```shell
-kubectl delete -f ./12_daemonset.yaml
+kubectl delete -f 12_daemonset.yaml
 ```
 </br>
 </br>
