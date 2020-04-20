@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: guestbook-local
+spec:
+  selector:
+    matchLabels:
+      run: guestbook-local
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        run: guestbook-local
+    spec:
+      containers:
+      - name: guestbook-local
+        image: detteiu/karbon-training01
+        ports:
+        - containerPort: 3000
