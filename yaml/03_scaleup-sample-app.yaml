@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: guest-local
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      run: guest-local
+  template:
+    metadata:
+      labels:
+        run: nginx
+    spec:
+      containers:
+      - name: guest-local
+        image: detteiu/karbon-training01:v1
+        ports:
+        - containerPort: 3000
