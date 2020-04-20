@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: webapp-color
-        image: kodekloud/webapp-color:v1
+        image: detteiu/karbon-training02:v1
         ports:
         - containerPort: 8080
 ---
