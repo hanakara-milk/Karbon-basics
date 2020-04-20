@@ -26,7 +26,7 @@ kubectl describe -n ntnx-system services prometheus-k8s
 
 ## 73: Deploy Grafana, a metric visualization tool
 ```shell
-kubectl apply -f ./13_grafana-deployment.yaml
+kubectl apply -f 13_grafana-deployment.yaml
 kubectl get all -A | grep grafana
 ```
 ###### Quiz.1: What information do you see?
