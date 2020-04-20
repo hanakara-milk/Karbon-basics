@@ -15,4 +15,4 @@ spec:
         - name: sample-daemonset
           image: detteiu/karbon-training01
           ports:
-            - containerPort: 3000https://github.com/hanakara-milk/Karbon-basics
+            - containerPort: 3000
