@@ -87,7 +87,7 @@ kubectl get service -n ntnx-system
 
 `http://[YOUR_SERVICE_NAME].[YOUR_SERVICE_NAME_SPACE].svc.cluster.local:[PORT_NUMBER]`
 
-> Prometheus service type:ClusterIP is
+> Prometheus service type:ClusterIP should be
 
 `http://prometheus-k8s.ntnx-system.svc.cluster.local:9090`
 </br>
