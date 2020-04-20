@@ -19,7 +19,7 @@ spec:
         app: sample-statefuleset
     spec:
       containers:
-      - name: sample-container
+      - name: sample-statefuleset
         image: detteiu/karbon-training03
         volumeMounts:
         - name: sample-sts-pvc
